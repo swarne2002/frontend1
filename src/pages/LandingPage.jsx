@@ -14,6 +14,7 @@ export default function LandingPage(){
     //     <Buttons onClick={()=>{startTransition(()=>navigate("/signin"))}} lebel={"Sign In"}/>
     // </div>
     return <div>
+        Hello
         <Header/>
         <Banner/>
         <Expart/>
