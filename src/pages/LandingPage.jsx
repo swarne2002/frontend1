@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { Buttons } from "../components/Buttons";
 import { startTransition } from "react";
-// import { Header } from "../components/Header";
+import { Header } from "../components/Header";
 import { Banner } from "../components/Banner";
 import { Expart } from "../components/Expart";
 import { Newsletter } from "../components/Newsletter";
@@ -14,8 +14,7 @@ export default function LandingPage(){
     //     <Buttons onClick={()=>{startTransition(()=>navigate("/signin"))}} lebel={"Sign In"}/>
     // </div>
     return <div>
-{/*         Hello
-        <Header/> */}
+        <Header/>
         <Banner/>
         <Expart/>
         <Newsletter/>
