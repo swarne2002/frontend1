@@ -12,8 +12,8 @@ export default function SignIn(){
     const [username,setUserName] = useState('');
     const [password,setPassword] = useState('');
     const navigate = useNavigate();
-    return <div className="bg-gradient-to-t from-yellow-400 to-lime-200 h-screen relative">
-        <div className="absolute mt-[20px] w-1/4 text-center p-2 px-[20px] ml-[590px] backdrop-brightness-125 shadow-2xl">
+    return <div className="flex justify-center bg-gradient-to-t from-yellow-400 to-lime-200 h-screen relative">
+        <div className="absolute w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 text-center p-2 backdrop-brightness-125 shadow-2xl mt-4">
         <Heading lebel={"Sign In"}/>
         <SubHeading lebel={"Enter your information for create an account"}/>
         <InputBox onChange={e =>{

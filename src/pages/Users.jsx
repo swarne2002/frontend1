@@ -7,9 +7,18 @@ import { useNavigate } from "react-router-dom";
 
 export default function Users(){
     const [users, setUsers] = useState([]);
+    
+    // const navigate = useNavigate();
+    // const token = localStorage.getItem('key');
+    // if(token==null){
+    //     startTransition(()=>{
+    //         navigate("/signin");
+    //     })
+    // }
+
     return <div className="bg-gradient-to-t from-yellow-400 to-lime-200 h-screen">
         <InputBox onChange={async(e)=>{
-            const response = await axios.get("https://paymentapp-zgce.onrender.com/user/bulk?filter="+ e.target.value);
+            const response = await axios.get("https://paymentapp-zgce.onrender.com/user/bulk?filter="+ (e.target.value || ""));
             setUsers(response.data.users);
         }} lebel={"Users"} placeholder={"Search Users..."}/>
         <div className="m-2">

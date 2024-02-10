@@ -13,8 +13,8 @@ export default function SignUp(){
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
 
-    return <div className="bg-gradient-to-t from-yellow-400 to-lime-200 h-screen relative">
-           <div className="absolute mt-[20px] w-1/3 text-center px-[20px] ml-[540px] backdrop-brightness-125 shadow-2xl">
+    return <div className="flex justify-center bg-gradient-to-t from-yellow-400 to-lime-200 h-lvh relative">
+           <div className="absolute mt-[20px] w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 text-center  backdrop-brightness-125 shadow-2xl">
         <Heading lebel={"Sign Up"}/>
         <SubHeading lebel={"Enter your information for create an account"}/>
         <InputBox onChange={(e)=>{
